@@ -21,7 +21,7 @@ Test 3:
 Instruction cache test.   
 Result: With CPU at 4MHz (0 Flash wait states), instruction cache or prefetch buffer have no performance effect. With CPU at 64MHz (Flash has 3 wait states),  
 enabling at least one of the prefetch buffer or instruction cache, maxed out the performace (100 cycles for 100 NOPs). With instruction cache and prefetch buffer both disabled,  
-the penalty was 25% (100 NOPs took 125 cycles).  
+the penalty was 25% (64MHz, no prefetch buffer, no I-Cache, 100 NOPs consistently took ~125 cycles).  
   
 Test 4:  
 D-Cache test.  
